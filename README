@@ -9,14 +9,14 @@ processes them, and displays the answers. In the simplest case, commands
 are simply expressions which are evaluated.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-11
   less-418-1
   libreadline6-5.2.7-9
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20060817-1
-  cygport-0.3.8-1
+  cygport-0.3.10-1
   gcc-core-3.4.4-3
   make-3.81-1
 
@@ -29,15 +29,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack calc-2.12.3.0-X-src.tar.bz2
+  unpack calc-2.12.3.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./calc-2.12.3.0-X.cygport all
+  cygport ./calc-2.12.3.2-X.cygport all
 
 This will create:
-  /usr/src/calc-2.12.3.0-X-src.tar.bz2
-  /usr/src/calc-2.12.3.0-X.tar.bz2
+  /usr/src/calc-2.12.3.2-X-src.tar.bz2
+  /usr/src/calc-2.12.3.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -520,15 +520,18 @@ Files included in the binary package:
   /usr/share/calc/unitfrac.cal
   /usr/share/calc/varargs.cal
   /usr/share/calc/xx_print.cal
-  /usr/share/doc/calc-2.12.3.0/BUGS
-  /usr/share/doc/calc-2.12.3.0/COPYING
-  /usr/share/doc/calc-2.12.3.0/Changes
-  /usr/share/doc/calc-2.12.3.0/README
+  /usr/share/doc/calc-2.12.3.2/BUGS
+  /usr/share/doc/calc-2.12.3.2/COPYING
+  /usr/share/doc/calc-2.12.3.2/Changes
+  /usr/share/doc/calc-2.12.3.2/README
   /usr/share/man/man1/calc.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 2.12.3.2-1 -----
+Version bump.
 
 ----- version 2.12.3.0-1 -----
 Initial release for Cygwin.

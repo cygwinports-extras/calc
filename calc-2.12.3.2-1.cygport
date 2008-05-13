@@ -1,0 +1,22 @@
+DESCRIPTION="Interactive and scriptable console calculator"
+HOMEPAGE="http://www.isthe.com/chongo/tech/comp/calc/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -j1 \
+		T=${D} \
+		DEBUG="${CFLAGS}" \
+		CALCPAGER=less \
+		USE_READLINE="-DUSE_READLINE" \
+		READLINE_LIB="-lreadline"
+}
+
+src_install() {
+	cd ${B}
+	rm -f calc.exe sample_rand.exe sample_many.exe
+	cygmake -j1 install T=${D}
+	rm -f ${D}/usr/lib/*.dll ${D}/usr/bin/calc-static.exe
+	mv ${D}/usr/bin/cscript ${D}/usr/share/${PN}/
+}
