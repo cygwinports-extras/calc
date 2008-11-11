@@ -1,6 +1,7 @@
 DESCRIPTION="Interactive and scriptable console calculator"
 HOMEPAGE="http://www.isthe.com/chongo/tech/comp/calc/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+PATCH_URI="2.12.3.2-makefile-cygwin.patch"
 
 src_compile() {
 	lndirs
