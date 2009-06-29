@@ -1,5 +1,5 @@
 category: Math
-requires: cygwin libreadline6 less
+requires: libreadline6 less
 sdesc: "Interactive and scriptable console calculator"
 ldesc: "Calc is an interactive calculator which provides for easy large 
 numeric calculations, but which also can be easily programmed for 
